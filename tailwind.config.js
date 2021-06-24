@@ -3,6 +3,9 @@ module.exports = {
   purge: ['index.html'],
   darkMode: 'media',
   theme: {
+    fontFamily:{
+      'sans': ['Kumbh Sans'],
+    },
     extend: {
       colors: {
         violet: '#5964E0',
