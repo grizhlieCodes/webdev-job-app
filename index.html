@@ -11,32 +11,36 @@
 </head>
 <body>
 
-    <header>
-<!-- start of toggle dark/light mode  -->
+    <!-- <header>
+
 <div id="toggle-dark-mode-container" class="w-[12.2rem] h-[2.4rem] flex justify-between items-center ">
-    <!-- start of sun/light icon  -->
+
     <div id="light-icon">
         <img src="./assets/desktop/icon-sun.svg" alt="">
     </div>
-    <!-- end of sun/light icon  -->
 
-    <!-- start of toggle icon  -->
     <div id="switch-container" class="">
         <label for="toggle-checkbox" class=" w-[4.8rem] h-[2.4rem] rounded-full bg-white  p-[0.5rem] block">
             <input type="checkbox" id="toggle-checkbox" class="peer sr-only" >
 <div class="w-[1.4rem] h-[1.4rem] rounded-full bg-violet transition-all peer-checked:translate-x-[2.4rem]"></div>
         </label>
     </div>
-     <!-- end of toggle icon  -->
+    
 
     <div id="dark-icon">
         <img src="./assets/desktop/icon-moon.svg" class=" w-[1.6rem]" alt="">
     </div>
- <!-- end of moon/dark icon  -->
+
 </div>
-<!-- end of toggle dark/light mode  -->
 
-    </header>
 
+    </header> -->
+<script type='module'>
+    import toggle from './scripts/toggle.js'
+    let toggleVar = toggle()
+    let div = document.createElement('div')
+    div.innerHTML = toggleVar
+    document.body.append(div)
+</script>
 </body>
 </html>
