@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'jit',
-  purge: ['index.html', 'script.js'],
+  purge: ['index.html', './scripts/*.js'],
   darkMode: 'media',
   theme: {
     fontFamily:{
