@@ -1,6 +1,6 @@
 export default function createHeader() {
     let header = `
-    <header class="h-[13.6rem] sm:h-[16rem] lg:h-[16.2rem] w-full max-w-[111rem] 
+    <header class="h-[13.6rem] sm:h-[16rem] lg:h-[16.2rem] w-full max-w-[144rem] 
         sm:rounded-bl-[10rem] lg:rounded-br-[10rem] m-auto bg-violet
         px-[2.4rem] py-[3.2rem] sm:px-[3.9rem] sm:py-[4.2rem] lg:px-[16.5rem] lg:py-[4.4rem]
         transition-all  
@@ -13,6 +13,5 @@ export default function createHeader() {
             </div>
     </header>
     `
-
     return header
 }
