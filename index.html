@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" src="/scripts/renderHTML.js"></script>
-    <link rel="stylesheet" href="custom.css">
-    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="tailwind.css" />
     <title>Web Dev Job App</title>
-</head>
+  </head>
 
-<body>
+  <body class="">
+    <div id="card-container" class="h-[25.3rem] w-[35rem] relative">
+      <div
+        id="logo"
+        class="
+          absolute
+          z-10
+          left-[3.2rem]
+          h-[5rem]
+          w-[5rem]
+          bg-red-500
+          rounded-[1.5rem]
+        "
+      ></div>
+      <div
+        id="job-card"
+        class="
+          h-[22.8rem]
+          w-[35rem]
+          bg-white
+          absolute
+          bottom-[0rem]
+          rounded-[0.5rem]
+          bg-light-grey
+          pt-[1.7rem]
+        "
+      >
+        <div
+          id="job-info-container"
+          class="
+            m-[3.2rem]
+            w-[28.6rem]
+            h-[14.7rem]
+            flex flex-col
+            justify-between
+          "
+        >
+          <div id="job-info">
+            <p class="text-[1.6rem] font-norma text-grey">5h ago . Full Time</p>
+            <p class="text-[2rem] font-bold">Senior Software Engineer</p>
+            <p class="text-[1.6rem] font-norma text-grey">Scoot</p>
+          </div>
 
-</body>
-
+          <div id="job-location" class="text-[1.4rem] font-bold text-violet">
+            United Kingdom
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
