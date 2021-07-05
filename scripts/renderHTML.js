@@ -42,12 +42,13 @@ async function renderJobCards() {
         let cardContainer = document.createElement('div')
         cardContainer.id = job.id
         cardContainer.classList.add('h-[25.3rem]', 'w-[35rem]', 'min-w-[22.8rem]', 'max-w-[35rem]', 'relative')
-        main.append(cardContainer)
 
         let logo = document.createElement('div')
         logo.id = 'logo'
-        logo.classList.add('absolute', 'z-10', 'left-[3.2rem]', 'h-[5rem]', 'w-[5rem]', 'rounded-[1.5rem]')
+        logo.classList.add('absolute', 'z-10', 'left-[3.2rem]', 'h-[5rem]', 'w-[5rem]', 'rounded-[1.5rem]', 'grid', 'place-items-center')
+        logo.style.background = job.logoBackground
         let imgLogo = document.createElement('img')
+        
         imgLogo.src = job.logo
         logo.append(imgLogo)
         cardContainer.append(logo)
@@ -64,9 +65,9 @@ async function renderJobCards() {
         let jobInfo = document.createElement('div')
         jobInfo.id = 'job-info'
         jobInfo.innerHTML =
-            `<p class="text-[1.6rem] font-norma text-grey"> ${job.contract} . ${job.postedAt} </p>
+       `<p class="text-[1.6rem] font-normal text-grey"> ${job.contract} . ${job.postedAt} </p>
         <p class="text-[2rem] font-bold my-[0.6rem]"> ${job.position} </p>
-        < class="text-[1.6rem] font-norma text-grey"> ${job.company} </p>`
+        <p class="text-[1.6rem] font-normal text-grey"> ${job.company} </p>`
         jobInfoCard.append(jobInfo)
 
         let jobLocation = document.createElement('div')
@@ -77,6 +78,9 @@ async function renderJobCards() {
 
         jobCard.append(jobInfoCard)
         cardContainer.append(jobCard)
+
+        main.append(cardContainer)
+
     })
 }
 
