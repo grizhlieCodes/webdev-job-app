@@ -43,8 +43,11 @@ async function renderJobCards() {
         console.log(job.id)
         let cardContainer = document.createElement('div')
         cardContainer.id = job.id
-        cardContainer.classList.add('h-[25.3rem]', 'w-[32.7rem]', 'relative','md:w-[33,9rem]','lg:w-[35rem]')
-        //issue breakpoint not applying.
+        cardContainer.classList.add('lg:w-[35rem]')
+        cardContainer.classList.add('md:w-[33.9rem]')
+        cardContainer.classList.add('h-[25.3rem]', 'w-[32.7rem]', 'relative')
+       
+        //issue breakpoint not applying. 33.9 35
 
         let logo = document.createElement('div')
         logo.id = 'logo'
