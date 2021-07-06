@@ -3,6 +3,14 @@ module.exports = {
   purge: ['index.html', './scripts/*.js'],
   darkMode: 'class',
   theme: {
+    screens: {
+      mTab: '400px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
     fontFamily:{
       'sans': ['Kumbh Sans'],
     },
@@ -15,9 +23,6 @@ module.exports = {
         'light-grey': '#F4F6F8',
         'grey': '#9DAEC2',
         'dark-grey': '#6E8098'
-      },
-      screens: {
-        'l400': '400px'
       },
       backgroundImage: theme => ({
         'headerMobile': "url('/assets/mobile/bg-pattern-header.svg')",
