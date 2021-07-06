@@ -28,8 +28,8 @@ async function fetchData() {
 let main
 function createMain() {
     main = document.createElement('main')
-    main.classList.add('flex', 'justify-between', 'items-center', 'flex-wrap', 'w-[32.7rem]')
-    main.classList.add('gap-y-[4rem]', 'md:w-[68.9rem]', 'md:gap-x-[1.1rem]', 'lg:w-[111rem]', 'lg:gap-x-[3rem]' )
+    main.classList.add('flex', 'items-center', 'flex-wrap', 'w-[32.7rem]')
+    main.classList.add('gap-y-[4rem]', 'md:w-[68.9rem]', 'md:gap-x-[1.1rem]', 'lg:w-[111rem]', 'lg:gap-x-[3rem]', 'm-auto' )
     // main.classList.add('md:w-[68.9rem]','md:gap-[1.1rem]','lg:w-[111rem]','lg:gap-x-[3rem]', 'lg:bg-red-800')
     body.append(main)
 }
@@ -43,7 +43,8 @@ async function renderJobCards() {
         console.log(job.id)
         let cardContainer = document.createElement('div')
         cardContainer.id = job.id
-        cardContainer.classList.add('h-[25.3rem]', 'w-[32.7rem]', 'min-w-[22.8rem]', 'max-w-[35rem]', 'relative','md:w-[33.9rem]','lg:w-[35rem]')
+        cardContainer.classList.add('h-[25.3rem]', 'w-[32.7rem]', 'relative','md:w-[33,9rem]','lg:w-[35rem]')
+        //issue breakpoint not applying.
 
         let logo = document.createElement('div')
         logo.id = 'logo'
