@@ -28,7 +28,8 @@ async function fetchData() {
 let main
 function createMain() {
     main = document.createElement('main')
-    main.classList.add('flex', 'flex-grow', 'justify-between', 'items-center', 'flex-wrap', 'max-w-[111rem]', 'min-w-[327]')
+    main.classList.add('flex', 'justify-between', 'items-center', 'flex-wrap', 'w-[32.7rem]')
+    main.classList.add( 'gap-y-[4rem]','md:w-[68.9rem]','md:gap-x-[1.1rem]','lg:w-[111rem]','lg:gap-x-[3rem]', 'lg:ebg-red-800')
     body.append(main)
 }
 createMain()
@@ -41,7 +42,7 @@ async function renderJobCards() {
         console.log(job.id)
         let cardContainer = document.createElement('div')
         cardContainer.id = job.id
-        cardContainer.classList.add('h-[25.3rem]', 'w-[35rem]', 'min-w-[22.8rem]', 'max-w-[35rem]', 'relative')
+        cardContainer.classList.add('h-[25.3rem]', 'w-[32.7rem]', 'min-w-[22.8rem]', 'max-w-[35rem]', 'relative','md:w-[33.9rem]','lg:w-[35rem]')
 
         let logo = document.createElement('div')
         logo.id = 'logo'
@@ -55,7 +56,7 @@ async function renderJobCards() {
 
         let jobCard = document.createElement('div')
         jobCard.id = 'job-card'
-        jobCard.classList.add('h-[22.8rem]', 'w-[100%]', 'absolute', 'bottom-[0rem]', 'rounded-[0.5rem]', 'pt-[1.7rem]')
+        jobCard.classList.add('h-[22.8rem]', 'w-[100%]', 'absolute', 'bottom-[0rem]', 'rounded-[0.5rem]', 'pt-[1.7rem]','bg-purple-800','md:bg-purple-300')
 
         let jobInfoCard = document.createElement('div')
         // let jobInfoContainer = document.createElement('div')
